@@ -83,6 +83,8 @@ typings/
 # Serverless directories
 .serverless/
 
+.idea
+
 # FuseBox cache
 .fusebox/
 
