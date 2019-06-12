@@ -1,0 +1,47 @@
+{
+  "name": "omron-fins-es6",
+  "version": "1.0.0",
+  "description": "Porting on ES6 of https://github.com/patrick--/node-omron-fins for omron fins udp comunications",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --inspect index.js"
+  },
+  "keywords": [
+    "omron",
+    "fins",
+    "es6",
+    "udp",
+    "node"
+  ],
+  "author": "cimasim89",
+  "email": "cimasim89@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "event-emitter-mixin": "^0.3.8",
+    "lodash": "^4.17.11"
+  },
+  "homepage": "https://github.com/cimasim89/omron-fins-es6#readme",
+  "repository": "github.com:cimasim89/omron-fins-es6.git",
+  "bugs": {
+    "url": "https://github.com/cimasim89/omron-fins-es6/issues"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-eslint-plugin": "^1.4.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.12.2",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^24.8.0",
+    "prettier": "^1.13.7"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "proseWrap": "always"
+  }
+}
