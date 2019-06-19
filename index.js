@@ -12,7 +12,8 @@ class FinsClient extends EventEmitterMixin() {
 
     this.port = port || defaultHost.port
     this.host = host || defaultHost.host
-    this.timeout = (options && options.timeout) || defaultOptions.timeout
+    this.connectionTimeout =
+      (options && options.timeout) || defaultOptions.timeout
     this.socket = dgram.createSocket('udp4')
     this.responded = false
     this.header = constants.DefaultFinsHeader
@@ -28,12 +29,12 @@ class FinsClient extends EventEmitterMixin() {
     this.socket.on('close', () => this.emit('close'))
     this.socket.on('error', err => this.emit('error', err))
 
-    if (this.timeout) {
+    if (this.connectionTimeout) {
       setTimeout(() => {
         if (this.responded === false) {
           this.emit('timeout', this.host)
         }
-      }, this.timeout)
+      }, this.connectionTimeout)
     }
   }
 
