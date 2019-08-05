@@ -1,6 +1,6 @@
 {
   "name": "omron-fins-es6",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Porting on ES6 of https://github.com/patrick--/node-omron-fins for omron fins udp comunications",
   "main": "index.js",
   "scripts": {
